@@ -40,6 +40,11 @@ public class Arrays1 {
     }
   }
 
+  public static void addelement(int[] a, int n)
+  {
+    
+  }
+
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     int n = 0;
@@ -47,19 +52,20 @@ public class Arrays1 {
     boolean continueProgram = true;
 
     while (continueProgram) {
-      System.out.println("********************MENU*******************");
-      System.out.println("*  1. Nhap mang so nguyen                 *");
-      System.out.println("*  2. Xuat mang so nguyen                 *");
-      System.out.println("*  3. Mang theo thu tu tang dan           *");
-      System.out.println("*  4. Mang theo thu tu giam dan           *");
-      System.out.println("*  0. Thoat                               *");
-      System.out.println("*******************************************");
+      System.out.println("********************MENU********************");
+      System.out.println("*  1. Nhap mang so nguyen.                 *");
+      System.out.println("*  2. Xuat mang so nguyen.                 *");
+      System.out.println("*  3. Mang theo thu tu tang dan.           *");
+      System.out.println("*  4. Mang theo thu tu giam dan.           *");
+      System.out.println("*  5. Mang chen phan tu vao vi tri x.      *");
+      System.out.println("*  0. Thoat.                               *");
+      System.out.println("********************************************");
 
       int choose = -1;
-      while (choose < 0 || choose > 4) {
+      while (choose < 0 || choose > 5) {
         System.out.print("Nhap lua chon : ");
         choose = sc.nextInt();
-        if (choose < 0 || choose > 4) {
+        if (choose < 0 || choose > 5) {
           System.out.println("Vui long nhap lai!!!");
         }
       }
@@ -86,14 +92,15 @@ public class Arrays1 {
           continueProgram = false;
           break;
         default:
+        System.out.println("Khong hop le!!!");
           break;
       }
 
       if (continueProgram) {
-        System.out.print("\nBan co muon tiep tuc (1/2)? ");
-        int choice = sc.nextInt();
-        if (choice != 1) {
-          continueProgram = false;
+        System.out.print("\nBan co muon tiep tuc (Y/N)? ");
+        String choice = sc.next();
+        if (choice == "Y") {
+          continueProgram = true;
         }
       }
     }
