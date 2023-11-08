@@ -1,4 +1,4 @@
-package Loop.Arrays;
+
 import java.util.Scanner;
 
 public class Arrays1 {
