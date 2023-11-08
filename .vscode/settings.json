@@ -1,6 +1,8 @@
 {
   "java.project.sourcePaths": [
+    "OOP",
     "Arrays",
-    "OOP"
-  ]
+    "300 ex code"
+  ],
+  "git.enabled": false
 }
