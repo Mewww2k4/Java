@@ -9,6 +9,7 @@ public class Bai1 {
       System.out.print("Nhap mang a[" + i + "]= ");
       a[i] = newsc.nextInt();
     }
+    newsc.close();
   }
 
   public static void output(int a[]) {

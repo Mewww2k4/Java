@@ -2,8 +2,6 @@ import java.util.Scanner;
 import java.lang.Math;
 
 public class bai1 {
-  private static final float M_Pi = 0;
-
   public static void main(String[] args)
   {
     Scanner sc = new Scanner(System.in);
